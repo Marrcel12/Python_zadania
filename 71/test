@@ -1,0 +1,14 @@
+def fy(x,z):
+       f=0
+       if x >=0  and x<1:
+          f=0
+       elif x >= 1 and x < 2:
+           f=1
+       elif x >=2 and x < 3:
+           f=2
+       elif x >= 3 and x < 4:
+           f = 3
+       elif x >= 4 and x < 5:
+           f = 4
+
+       return round(Decimal(dane[f][0]) + Decimal(dane[f][1])*Decimal(x) + Decimal(dane[f][2])*Decimal(x**2) + Decimal(dane[f][3])*Decimal(x**3),z)
